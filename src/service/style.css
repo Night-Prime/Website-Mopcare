@@ -13,6 +13,10 @@ body {
   flex-direction: column;
 }
 
+body button {
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   height: 12vh;
@@ -91,7 +95,7 @@ li a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 .cta h5 {
@@ -101,148 +105,155 @@ li a {
 .cta h1 {
   margin-bottom: 1rem;
   font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
-.cta p {
+
+.mvp,
+.service {
+  width: 100%;
+  height: 1014px;
+}
+
+.mvp,
+.service main,
+.edu-service main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.service h2,
+.edu-service h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: black;
+}
+
+.mvp h2 {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.mvp,
+.service p,
+.edu-service p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #667085;
+  margin-bottom: 1rem;
+}
+
+.service-img,
+.edu-service-img {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.service-img .first-img {
+  width: 480px;
+  height: 720px;
+}
+
+.service-img .second-img {
+  margin-left: 2rem;
+  width: 720px;
+  height: 480px;
+}
+
+.donation {
+  width: 100%;
+  height: 509px;
+}
+
+.mvp-donation main,
+.donation main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.mvp-donation head,
+.donation head {
+  display: inline;
+}
+
+.mvp-donation p,
+.donation p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #667085;
 }
 
-.metrics {
-  height: 752px;
-  width: 100%;
-  background-color: #f9fafb;
-}
-
-.metrics main {
-  height: 80%;
+.mvp-donation button,
+.donation button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 4rem;
-  /* justify-content: space-between; */
+  padding: 12px 32px;
+  gap: 10px;
+  width: 139px;
+  height: 48px;
+  background: #3379c1;
+  border-radius: 6px;
+  box-shadow: none;
+  color: white;
+  border: 1px solid #3379c1;
 }
 
-.metrics aside,
-.service aside {
-  flex: 1;
-}
-
-.metrics-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  position: relative;
-  height: 90%;
-  width: 80%;
-  margin-left: 5rem;
-}
-
-.metrics-data h3 {
-  color: #3379c1;
-  margin-bottom: 1rem;
-  /* position: absolute; */
-  /* top: 5%; */
-}
-
-.metrics-data h1 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: -0.02em;
-  color: #101828;
-}
-
-.metrics-data .grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 5px;
-  font-size: 72px;
-  color: #3379c1;
-  margin-top: 3rem;
-}
-
-.grid-item {
-  text-align: left;
-  width: 246px;
-}
-
-.grid-item .unit {
-  font-size: 18px;
-}
-
-.metrics img {
-  margin-left: 2rem;
-}
-
-.bio {
+.edu-service {
   width: 100%;
-  height: 1216px;
+  /* height: 3201px; */
+  margin-top: 6rem;
+}
+
+.edu-service .donation {
   margin-top: 2rem;
-}
-
-.bio main {
-  width: 90%;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.bio-intro main {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.bio-intro section {
-  flex: 1;
-}
-
-.bio-img h2{
-    display: none;
-}
-.bio img {
-  width: 567px;
-  height: 531px;
-  object-fit: contain;
-}
-
-.bio-introduction {
   width: 100%;
-  padding: 2px;
-  margin-left: 1rem;
+  height: 569px;
 }
 
-.bio-introduction h2 {
-  font-size: 48px;
-  color: #18191f;
-  font-weight: 800;
+.edu-service .donation main {
+  text-align: justify;
 }
 
-.bio-introduction p {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #667085;
-  display: inline-block;
-  height: 512px;
+.edu-service .first-img {
+  height: 480px;
+  width: 720px;
 }
 
-.bio-text {
+.edu-service .second-img {
+  width: 480px;
+  height: 320px;
+}
+
+.feed-service {
   width: 100%;
-  margin-top: 2rem;
+  height: 1473px;
 }
 
-.bio-text p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #667085;
+.feed-service .first-img {
+  width: 480px;
+  height: 720px;
+}
+
+.feed-service .second-img {
+  width: 720px;
+  height: 480px;
 }
 
 .newsletter {
@@ -382,13 +393,14 @@ footer .logo {
 }
 
 @media only screen and (max-width: 768px) {
-    body{
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+  body {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   header {
     width: 100%;
     object-fit: contain;
@@ -404,84 +416,80 @@ footer .logo {
     left: 1%;
   }
 
-  .cta{
+  .cta {
     height: 310px;
   }
 
-  .cta p{
+  .cta p {
     text-align: center;
   }
 
-  .cta main{
+  .cta main {
     width: 90%;
   }
 
-  .cta h1{
+  .cta h1 {
     font-size: 36px;
   }
 
-  .metrics main{
+  .service {
+    height: 100%;
+  }
+  .donation {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .mvp {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .mvp-donation {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .edu-service {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .edu-service .service-img .first-img{
+    height: 240px !important;
+    width: 320px !important;
+    object-fit: contain;
+  }
+
+
+  .service-img {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
-  }
-  .metrics-data{
-    margin-top: 2rem;
-    text-align:justify;
-    margin-left: 0;
-  }
-  .metrics-data h1 {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  .metrics-data h3 {
-    font-size: 16px;
-    display:inline-block;
-  }
-  .metrics-data .grid {
-    font-size: 36px;
-    padding: 5px;
-    margin-top: 1rem;
-  }
-  .metrics img {
-    margin-left: 2rem;
-    object-fit: contain;
-    width: 80%;
-  }
-  
-  .grid-item {
-    text-align: left;
-    width: 130px;
-  }
-  .grid-item .unit {
-    font-size: 12px;
   }
 
-  .bio main{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+  .service-img .first-img{
+    width: 240px;
+    height: 360px;
   }
-  .bio-img h2{
-    display: block;
-    text-align: center;
+
+  .feed-service {
+    margin-top: 12rem;
   }
-  .bio img{
-    height: 240px;
-    width: 343px;
+
+  .newsletter {
+    margin-top: 20rem;
+    height: 100%;
   }
-  .bio-introduction{
-    margin-left: 0;
+
+  .first-img {
+    width: 240px;
+    height: 360px;
   }
-  .bio-introduction h2{
+  .second-img {
     display: none;
   }
 
-  .newsletter{
-    margin-top: 65rem;
-  }
-
-  .newsletter main{
+  .newsletter main {
     display: flex;
     flex-direction: column;
   }
@@ -490,7 +498,7 @@ footer .logo {
     margin-top: 1rem;
     width: 100%;
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     flex-direction: column;
   }
   .newsletter input {
@@ -501,16 +509,16 @@ footer .logo {
     margin-top: 1rem;
   }
 
-  .footer{
+  .footer {
     margin-top: 4rem;
     height: 100%;
   }
-  .footer main{
+  .footer main {
     display: flex;
     flex-direction: column;
   }
 
-  footer .container{
+  footer .container {
     display: none;
   }
 }
